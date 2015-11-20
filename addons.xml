@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.genesis" name="DREAM-STREAM ON DEMAND" version="8.0.0" provider-name="Dream-Stream">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.requests" version="1.0.0" />
+		<import addon="script.module.metahandler" optional="true" />
+		<import addon="plugin.video.youtube" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">On Demand Service by Dream-Stream</summary>
+		<description lang="en">On Demand Service by Dream-Stream</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+</addons>
